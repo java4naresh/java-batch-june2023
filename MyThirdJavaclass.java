@@ -1,0 +1,4 @@
+class MyThird123Class
+{
+	
+}
