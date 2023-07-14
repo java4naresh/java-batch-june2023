@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class TwoDimensionalArray
 {
 	public static void main(String[] args) 
@@ -8,7 +9,10 @@ class TwoDimensionalArray
 		System.out.println(numbers[0][1]);
 		System.out.println(numbers[0][2]);
 		System.out.println(numbers[1][0]);
-		numbers[0][0] = 10;
+		//numbers[0][0] = 10;
 		System.out.println(numbers[0][0]);
+		System.out.println(Arrays.toString(numbers[0]));
+		System.out.println(Arrays.toString(numbers[1]));
+		System.out.println(Arrays.toString(numbers[2]));
 	}
 }
