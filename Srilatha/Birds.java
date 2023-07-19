@@ -5,6 +5,7 @@ class Birds
         String color;
 	double weight;
 	double height;
+
 	
 public static void main(String args[])
 {
@@ -15,6 +16,24 @@ public static void main(String args[])
 	bird.weight = 2.0;
 	bird.height = 1.0;
 	System.out.println(bird);
+
+	Birds bird2 = new Birds();
+	bird2.birdType = "peacock";
+	bird2.nickname = "kollu";
+	bird2.color = "blue";
+	bird2.weight = 2.0;
+	bird2.height = 1.0;
+	System.out.println(bird2);
+
+
+	Birds bird3 = new Birds();
+	bird3.birdType = "pigeon";
+	bird3.nickname = "choopu";
+	bird3.color = "grey";
+	bird3.weight = 3.0;
+	bird3.height = 6.0;
+	System.out.println(bird3);
+
 }
 	public String toString(){
 	return "Bird[birdType="+birdType+", nickname="+nickname+", color="+color+", weight="+weight+", height="+height+"]";
@@ -22,22 +41,5 @@ public static void main(String args[])
 }
 
 
-class ModelVillages{
-String villageName;
-String mandal;
-int population;
-}
 
-public static void main(String args[])
-{
-	ModelVillages village = new ModelVillages();
-	village.villageName="Amaravathi";
-	village.mandal="Dharanikota";
-	village.population=2,500;
-	System.out.println(village);
-}
-	public String toString(){
- 	return"Modelvillage[villageName="+villageName+", mandal="+mandal+", population="+population+"]";
-}
-}
 	
