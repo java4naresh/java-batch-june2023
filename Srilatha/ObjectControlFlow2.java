@@ -2,6 +2,7 @@ class ObjectControlFlow2
 {
 	int number=30;
 	int number2;
+	
 
 	public ObjectControlFlow2(int number,int number2){
 	System.out.println(this.number);
