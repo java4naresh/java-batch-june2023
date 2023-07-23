@@ -11,14 +11,19 @@ class Calculator
 	System.out.println(sum);
 	}
 
+	public int sub(int num1,int num2){
+	return num1-num2;
+	}
 
-	public static void main(String[] args) 
-	{
-		Calculator calculator = new Calculator();
-		int sum = calculator.add(10,20);// calling
-		System.out.println(sum);
-		sum = calculator.add(2,5);
-		System.out.println(sum);
-		//calculator.addAndPrint(25,25);
+	public int mul(int num1,int num2){
+	return num1*num2;
+	}
+
+	public int div(int num1,int num2){
+	return num1/num2;
+	}
+
+	public static int addThreeNumbers(int num1, int num2, int num3) {
+	return num1+num2+num3;
 	}
 }
