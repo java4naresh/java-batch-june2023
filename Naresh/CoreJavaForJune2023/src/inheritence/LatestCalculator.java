@@ -1,3 +1,4 @@
+package inheritence;
 
 public class LatestCalculator extends Calculator {
 	

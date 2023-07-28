@@ -1,3 +1,4 @@
+package inheritence;
 
 public class ExtraCalculator extends Calculator {
 
