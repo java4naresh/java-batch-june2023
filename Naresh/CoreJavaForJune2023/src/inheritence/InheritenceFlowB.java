@@ -15,5 +15,10 @@ public class InheritenceFlowB extends InheritenceFlowA {
 	public InheritenceFlowB(String name, String name2) {
 		//super("");
 	}
+	
+	public void prepareForInterview() {
+		// logic
+		super.read();
+	}
 
 }

@@ -10,4 +10,7 @@ public class InheritenceFlowA {
 		
 	}
 
+	public void read() {
+		System.out.println("Read atleast 4 hours");
+	}
 }
