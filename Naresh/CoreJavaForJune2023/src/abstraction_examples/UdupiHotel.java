@@ -2,20 +2,38 @@ package abstraction_examples;
 
 public class UdupiHotel implements HotelInterface {
 	
+	int idlyPrice;
+	
+	int puriPrice;
+	
+	int dosaPrice;
+	
+	int chapathiPrice;
+	
+	String location;
+	
+	public UdupiHotel(int idlyPrice, int puriPrice, int dosaPrice, int chapathiPrice, String location) {
+		this.idlyPrice = idlyPrice;
+		this.puriPrice = puriPrice;
+		this.dosaPrice = dosaPrice;
+		this.chapathiPrice = chapathiPrice;
+		this.location = location;
+	}
+	
 	public int idlyPrice() {
-		return 40;
+		return this.idlyPrice;
 	}
 	
 	public int puriPrice() {
-		return 45;
+		return this.puriPrice;
 	}
 	
 	public int dosaPrice() {
-		return 50;
+		return this.dosaPrice;
 	}
 	
 	public int chapathiPrice() {
-		return 40;
+		return this.chapathiPrice;
 	}
 	
 	public int udupiSplItemPrice() {
