@@ -1,10 +1,10 @@
 public interface RestaurentInterface {
- 
-    int chickenBiryaniPrice();
+    
+   int chickenBiryaniPrice();
 
-    int vegBiryaniPrice();
+   int vegBiryaniPrice();
 
-    int frideRicePrice();
+   int frideRicePrice();
 
-    int noodlesPrice();
+   int noodlesPrice();
 }
