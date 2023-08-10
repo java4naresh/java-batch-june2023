@@ -17,7 +17,31 @@ public class StringMethodExamples {
 		//conversion("NaResH", "Upper Lower");//naresh
 		//emptyCheck(" ");
 		//trimCheck(" Naresh Kambala ");
-		splitCheck("Naresh Srilatha Shyamala Sathish", " ");
+		//splitCheck("Naresh Srilatha Shyamala Sathish", " ");
+		//startsWithCheck("Naresh", "Naresh");//true
+		//endsWithCheck("Naresh", "ha");
+		//indexOfCheck("Srilatha", 'a');//4
+		//lastIndexOfCheck("SrilathaNa", 'a');//7
+		//replaceCheck("sathish", 's', 'n');//Nathish
+		//replaceAllCheck("Naresh12Java45@*", "[^a-zA-Z]", "");
+		substringCheck("Srilatha Bangaru Shyamala");
+	}
+	
+	public static void substringCheck(String word) {
+		System.out.println(word.substring(9, 16));
+		System.out.println(word.substring(9));
+	}
+	
+	public static void replaceAllCheck(String word, String ex, String newS) {
+		word = word.replaceAll(ex, newS);
+		System.out.println(word);
+	}
+	
+	public static void replaceCheck(String word, char oldC, char newC) {
+		//word = word.replace(oldC, newC);
+		//word = word.replace("S", "N");//
+		word = word.replaceFirst("s", "n");
+		System.out.println(word);
 	}
 	
 	public static void compareStrings(String name1, String name2) {
@@ -65,6 +89,35 @@ public class StringMethodExamples {
 		for(String name:names) {
 			System.out.println(name);
 		}
+	}
+	
+	public static void startsWithCheck(String word, String ex) {
+		if(word.startsWith(ex)) {
+			System.out.println("True");
+		} else {
+			System.out.println("False");
+		}
+	}
+	
+	public static void endsWithCheck(String word, String ex) {
+		if(word.endsWith(ex)) {
+			System.out.println("True");
+		} else {
+			System.out.println("False");
+		}
+	}
+	
+	public static void indexOfCheck(String word, char ch) {
+		System.out.println(word.indexOf(ch));
+	}
+	
+	public static void lastIndexOfCheck(String word, char ch) {
+		System.out.println(word.lastIndexOf(ch));
+		System.out.println(word.lastIndexOf("a"));
+		System.out.println(word.lastIndexOf(ch, 6));
+		System.out.println(word.lastIndexOf("a", 6));
+		//int i = Math.min(6, word.length() - 1);
+		//System.out.println(i);
 	}
 
 }
