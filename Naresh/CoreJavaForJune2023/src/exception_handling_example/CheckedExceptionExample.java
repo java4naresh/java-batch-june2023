@@ -6,8 +6,9 @@ import java.io.FileReader;
 
 public class CheckedExceptionExample {
 
-	public static void main(String[] args) {
-		fileRead();
+	public static void main(String[] args) throws FileNotFoundException {
+		//fileRead();
+		fileRead2();
 
 	}
 	
